@@ -1,0 +1,222 @@
+/* Talent.css - Styled to match provided design */
+
+.talent-dashboard {
+    padding: 20px;
+    color: white;
+    background-color: #0e1116;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .dashboard-header .header-actions {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .header-button {
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .filters-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .filters-bar label {
+    font-weight: 600;
+  }
+  
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1d212b;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-section img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .profile-section h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .widget {
+    background-color: #1d212b;
+    padding: 16px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .tasks-list,
+  .deals-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .task-item {
+    background-color: #2b2f3a;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-item.complete .status-dot {
+    background-color: #3dc47e;
+  }
+  
+  .task-item.incomplete .status-dot {
+    background-color: #d94444;
+  }
+  
+  .status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .calendar-section {
+    background-color: #1d212b;
+    padding: 16px;
+    border-radius: 16px;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+  }
+  
+  .calendar-day {
+    height: 80px;
+    background-color: #2b2f3a;
+    border-radius: 12px;
+    padding: 6px;
+    font-size: 12px;
+    color: white;
+  }
+  
+  .color-coding,
+  .suggestions,
+  .clashes,
+  .filters,
+  .metrics,
+  .preferences,
+  .communication,
+  .charts {
+    background-color: #1d212b;
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .charts canvas {
+    background-color: #2b2f3a;
+    padding: 10px;
+    border-radius: 12px;
+  }
+  
+  .button-toggle {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 4px 10px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="date"],
+  select {
+    padding: 6px 10px;
+    background-color: #2b2f3a;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 8px;
+  }
+  
+  input::placeholder {
+    color: #aaa;
+  }
+  
+  .preferences input[type="checkbox"] {
+    margin-right: 6px;
+  }
+  
+  .deal-opportunity {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #2b2f3a;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .deal-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .locked-section {
+    padding: 10px;
+    background-color: #14171d;
+    border-radius: 12px;
+    color: #ccc;
+    font-style: italic;
+    text-align: center;
+  }
+  
