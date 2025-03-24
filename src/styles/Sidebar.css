@@ -15,12 +15,14 @@
   }
   
   .sidebar-logo {
-    font-size: 2.5rem;
-    font-weight: bold;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 3px;
     padding: 1rem 0;
+  }
+  
+  .sidebar-logo-img {
+    width: 130px;
+    height: auto;
+    object-fit: contain;
   }
   
   .sidebar-menu {
@@ -30,9 +32,11 @@
     padding: 0 1rem;
   }
   
-  .sidebar-menu a {
+  .sidebar-menu a,
+  .logout-button {
     display: flex;
     align-items: center;
+    gap: 10px;
     padding: 0.75rem 0.5rem;
     margin: 0.25rem 0;
     border-radius: 10px;
@@ -40,15 +44,20 @@
     color: #ffffff;
     font-size: 0.95rem;
     transition: background-color 0.2s ease, transform 0.2s ease;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
   }
   
-  .sidebar-menu a:hover {
+  .sidebar-menu a:hover,
+  .logout-button:hover {
     background-color: #1a1a1a;
     transform: translateX(4px);
   }
   
-  .sidebar-menu a svg {
-    margin-right: 0.75rem;
+  .sidebar-menu svg,
+  .sidebar-bottom svg {
     font-size: 1.2rem;
   }
   
@@ -59,6 +68,7 @@
   .sidebar-bottom a {
     display: flex;
     align-items: center;
+    gap: 10px;
     padding: 0.6rem 0.5rem;
     margin-bottom: 0.25rem;
     color: #fff;
