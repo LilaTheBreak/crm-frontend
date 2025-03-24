@@ -9,3 +9,15 @@ services:
     envVars:
       - key: GOOGLE_CLIENT_ID
         value: 583250868510-r3e37u1i3udor8ctdo8p5s5o87qg3rol.apps.googleusercontent.com
+
+  - type: static
+    name: crm-frontend
+    buildCommand: npm install && npm run build
+    publishPath: build
+    environment: static
+    autoDeploy: true
+    envVars:
+      - key: REACT_APP_API_BASE_URL
+        value: https://crm-backend.onrender.com
+      - key: REACT_APP_GOOGLE_CLIENT_ID
+        value: 583250868510-r3e37u1i3udor8ctdo8p5s5o87qg3rol.apps.googleusercontent.com
