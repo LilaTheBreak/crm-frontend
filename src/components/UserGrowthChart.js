@@ -1,0 +1,1 @@
+export const UserGrowthChart = () => <div>User Growth Chart</div>;

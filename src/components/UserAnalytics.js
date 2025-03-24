@@ -1,0 +1,1 @@
+export const UserAnalytics = () => <div>User Analytics</div>;

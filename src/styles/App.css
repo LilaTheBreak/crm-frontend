@@ -1,0 +1,111 @@
+/* App.css */
+
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  body {
+    background-color: #0e1117; /* Deep charcoal */
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+  }
+  
+  /* Layout */
+  .app-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 200px;
+    background-color: #000000;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    border-right: 1px solid #222;
+  }
+  
+  .sidebar-logo {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar nav {
+    width: 100%;
+  }
+  
+  .sidebar nav a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+  }
+  
+  .sidebar nav a:hover {
+    background-color: #1a1a1a;
+    transform: translateX(4px);
+  }
+  
+  /* Icon spacing */
+  .sidebar nav a svg {
+    margin-right: 0.8rem;
+    font-size: 1.1rem;
+  }
+  
+  /* Main content */
+  .main-content {
+    margin-left: 200px;
+    padding: 2rem;
+    width: 100%;
+    background-color: #1e1e1e;
+    overflow-y: auto;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #FF6F61;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e35b4e;
+    transform: scale(1.05);
+  }
+  
+  /* Typography */
+  h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  a {
+    color: #F7CAC9;
+  }
+  
